@@ -9,6 +9,7 @@ Umbraco is easy to install and it is easy to build a test site.
 This code works on Umbraco v7.4.3 and v7.5.13 (webforms) sites.
 If you find something horrendous, please let me know. 
 Feel free to play around with the code, but please note I have moved on to other projects for the moment.
+Note: Users will also always have to select "Save and Send For Approval" as their last action on a page. 
 
 This was a simple straightforward excercise to get past a particular hurdle, i.e. how to inform backoffice staff of which pages on a large site are awaiting publishing.
 
