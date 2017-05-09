@@ -53,6 +53,7 @@ Steps:
 In summary, you will create files as follow:
 
 * /App_Code/CSCode	
+(Note: we have to specify the CSCode folder because we also use VBCode, which requires an entry in the web.config)
 Create classes to instantiate your application 
 e.g. <MyApp>Application.cs, <MyApp>ApiController.cs, and <MyApp>.cs
 
