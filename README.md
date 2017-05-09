@@ -30,6 +30,12 @@ For reference, please see these links:
 [https://github.com/TimGeyssens/UmbracoAngularBackofficePages/tree/master/UmbracoAngularBackofficePages](https://github.com/TimGeyssens/UmbracoAngularBackofficePages/tree/master/UmbracoAngularBackofficePages) 
 - ApproveIt
 https://github.com/ViGiLnT/ApproveIt
+- http://skrift.io/articles/archive/sections-and-trees-in-umbraco-7
+- http://stackoverflow.com/questions/17192269/umbraco-add-dashboard-with-code
+- http://umbraco.github.io/Belle/#/tutorials/manifest
+
+
+
 
 Steps:
 - create a tree with a menu item 
