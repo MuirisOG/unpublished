@@ -1,0 +1,6 @@
+﻿{
+    javascript: [
+        '~/App_Plugins/MyOrgAdmin/backoffice/unpublishedTree/edit.controller.js',
+        '~/App_Plugins/MyOrgAdmin/approval.resource.js',
+    ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language alias="cy" intName="Welsh (UK)" localName="Welsh (UK)" lcid="" culture="cy-GB">
+  <area alias="sections">
+    <key alias="myorgadmin">MyOrg Admin</key>
+  </area>
+</language>
