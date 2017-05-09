@@ -1,0 +1,53 @@
+USE [umbDB7513]
+GO
+
+/****** Object:  View [dbo].[myorgCmsDocument_Unpublished]   ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE VIEW [dbo].[myorgCmsDocument_Unpublished]
+AS
+
+/********************
+* using a Common Table Expression (CTE) to look for the maxid in the umbracoLog table
+* maxid indicates the last 
+********************/
+with cte
+as
+(
+SELECT [id],
+       [userId],
+       [NodeId],
+       [Datestamp],
+       [logHeader],
+       [logComment],
+        max(id) over (partition by NodeId) as maxid
+  FROM [umbDB7513].[dbo].[umbracoLog]
+)
+select uuser.userName, 
+       doc.nodeId, 
+       doc.published, 
+       doc.documentUser, 
+       doc.text, 
+       doc.releaseDate,
+       doc.expireDate, 
+       doc.updateDate, 
+       doc.templateId, 
+       doc.newest
+from 
+  cte, cmsDocument doc, umbracoUser uuser
+where 
+  cte.id = maxid
+  and cte.logHeader = 'SendToPublish'
+  and cte.NodeId = doc.nodeId
+  and doc.newest = 1
+  and cte.userId = uuser.id
+;
+
+GO
+
+
+
