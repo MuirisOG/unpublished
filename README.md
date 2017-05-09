@@ -17,7 +17,7 @@ This was a simple straightforward excercise to get past a particular hurdle, i.e
 - Note: The umbraco backoffice is a single page application built using AngularJS.
 These are the steps for building your own section/application in the back office, in this case to display pages waiting to be published.
 - NB: This works for an Umbraco site built using WebForms, but can be adapted for MVC
-- NB: This is a precis of a full set of notes that were for instruction for colleagues and so have come from a number of sources, most of which I think I have fully referenced here.
+- NB: This is a precis of a full set of notes that were for instruction for colleagues and so have come from a number of sources, most of which I think I have fully referenced here. 
 
 For reference, please see these links:
 - The link below shows how to create a simple custom tree and angular editor and dialog.
@@ -28,6 +28,8 @@ For reference, please see these links:
 ([http://umbraco.tv/videos/umbraco-v7/developer/extending/property-editors/](http://umbraco.tv/videos/umbraco-v7/developer/extending/property-editors/))
 - NB: See this tutorial for an excellent example of using petapoco to update a custom made table in the backoffice
 [https://github.com/TimGeyssens/UmbracoAngularBackofficePages/tree/master/UmbracoAngularBackofficePages](https://github.com/TimGeyssens/UmbracoAngularBackofficePages/tree/master/UmbracoAngularBackofficePages) 
+- ApproveIt
+https://github.com/ViGiLnT/ApproveIt
 
 Steps:
 - create a tree with a menu item 
