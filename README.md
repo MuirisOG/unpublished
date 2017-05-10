@@ -51,6 +51,8 @@ Steps:
 
 - ...create a dialog for the menu item 
   (i.e. a plugin in the /App_Plugins folder, with a html view and AngularJS controller)
+  
+- create a view in the SQL Server database
 
 In summary, you will create files as follow:
 
