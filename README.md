@@ -41,10 +41,10 @@ https://github.com/ViGiLnT/ApproveIt
 
 Steps:
 - create a tree with a menu item 
-  (<myPlugin>TreeController, located in /app_code folder - this can contain more than 1 tree)
+  (myPluginTreeController, located in /app_code folder - this can contain more than 1 tree)
 
 - create an API controller	
-  (<myPlugin>ApiController, located in /app_code folder)
+  (myPluginApiController, located in /app_code folder)
 
 - create an editor, or...
   (i.e. a plugin in the /App_Plugins folder, with a html view and AngularJS controller)
@@ -57,13 +57,13 @@ In summary, you will create files as follow:
 * /App_Code/CSCode	
 (Note: we have to specify the CSCode folder because we also use VBCode, which requires an entry in the web.config)
 Create classes to instantiate your application 
-e.g. <MyApp>Application.cs, <MyApp>ApiController.cs, and <MyApp>.cs
+e.g. MyAppApplication.cs, MyAppApiController.cs, and MyApp.cs (for object class)
 
 * /Config files
 Amend the config files applications.config, dashboard.config (the only one edited manually) and trees.config
 
 * /App_Plugins
-Create an Umbraco backoffice server side UI with subfolders for /<MyApp>/<myAppTree>, /propertyeditors, /Lang, and 3 files <myApp>.resource.js, <myApp>dashboardintro.html, package.manifest
+Create an Umbraco backoffice server side UI with subfolders for /MyApp/myAppTree, /propertyeditors, /Lang, and 3 files myApp.resource.js, myAppdashboardintro.html, package.manifest
 
 * /usercontrols		
 optionally create usercontrols that can be called from the backoffice (put the link into dashboard.config)
