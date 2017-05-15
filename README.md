@@ -1,5 +1,5 @@
 # unpublished
-TLDR: Very simple solution to see unpublished pages in Umbraco
+TLDR: Very simple solution to see pages sent for approval in Umbraco
 
 Note
 Please be aware that this code is given freely but with the usual caveats. 
