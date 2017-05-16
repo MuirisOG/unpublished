@@ -2,6 +2,10 @@
 TLDR: Very simple solution to see pages sent for approval in Umbraco
 
 Note
+I've posted my code here following a suggestion on our.umbraco.org
+https://our.umbraco.org/forum/extending-umbraco-and-using-the-api/84089-workflow-can-i-have-one-just-like-this
+
+Note
 Please be aware that this code is given freely but with the usual caveats. 
 Please check your code carefully as I can't be responsible for errors caused by the code in this repository not working.
 Please do as I have done, go through the excellent tutorials (some listed below) and do all your testing on a TEST site.
