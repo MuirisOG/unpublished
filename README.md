@@ -1,7 +1,7 @@
 # unpublished
 TLDR: Very simple solution to see pages sent for approval in Umbraco
 
-NB: I have a new version of this very simple app, but done properly as a class library. I will post this soon. Note that version of Umbraco I'm using keeps telling users they have "unsaved changes" which kind of wrecks my cunning plan as this relies on the last entry being set by the "Save and Send for Approval" action.
+NB: I have a new version of this very simple app, but done properly as a class library. I will post this soon. Note that the version of Umbraco I'm using (7.5.14) keeps telling users they have "unsaved changes", prompting them to save the page, which in turn kind of wrecks my cunning plan as this solution relies on the last entry being set by the "Save and Send for Approval" action.
 
 Note
 I've posted my code here following a suggestion on our.umbraco.org
