@@ -1,7 +1,9 @@
 # unpublished
 TLDR: Very simple solution to see pages sent for approval in Umbraco
 
-NB: I have a new version of this very simple app, but done properly as a class library. I will post this soon. Note that the version of Umbraco I'm using (7.5.14) keeps telling users they have "unsaved changes", prompting them to save the page, which in turn kind of wrecks my cunning plan as this solution relies on the last entry being set by the "Save and Send for Approval" action.
+NB: Note that the version of Umbraco I'm using (7.5.14) keeps telling users they have "unsaved changes", prompting them to save the page, which in turn kind of wrecks my cunning plan as this solution relies on the last entry being set by the "Save and Send for Approval" action.
+
+Note: Opened your Umbraco solution in Visual Studio and creat a class library (in this case called MyOrg.Admin) as an additional project. When built, the dll for this project can be copied to the bin folder for the Umbraco project in the same (or other, if they are the same version of Umbraco) solution.
 
 Note
 I've posted my code here following a suggestion on our.umbraco.org
