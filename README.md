@@ -3,7 +3,7 @@ TLDR: Very simple solution to see pages sent for approval in Umbraco
 
 NB: Note that the version of Umbraco I'm using (7.5.14) keeps telling users they have "unsaved changes", prompting them to save the page, which in turn kind of wrecks my cunning plan as this solution relies on the last entry being set by the "Save and Send for Approval" action.
 
-Note: Opened your Umbraco solution in Visual Studio and creat a class library (in this case called MyOrg.Admin) as an additional project. When built, the dll for this project can be copied to the bin folder for the Umbraco project in the same (or other, if they are the same version of Umbraco) solution.
+Note: Open your Umbraco solution in Visual Studio and create a class library (in this case called MyOrg.Admin) as an additional project. When built, the dll for this project can be copied to the bin folder for the Umbraco project in the same (or other, if they are the same version of Umbraco) solution. 
 
 Note
 I've posted my code here following a suggestion on our.umbraco.org
@@ -49,10 +49,10 @@ https://github.com/ViGiLnT/ApproveIt
 
 Steps:
 - create a tree with a menu item 
-  (myPluginTreeController, located in /app_code folder - this can contain more than 1 tree)
+  (myPluginTreeController, located in /MyClassLibrary/Controllers folder - this can contain more than 1 tree)
 
 - create an API controller	
-  (myPluginApiController, located in /app_code folder)
+  (myPluginApiController, located in /MyClassLibrary/Controllers folder)
 
 - create an editor, or...
   (i.e. a plugin in the /App_Plugins folder, with a html view and AngularJS controller)
@@ -64,13 +64,12 @@ Steps:
 
 In summary, you will create files as follow:
 
-* /App_Code/CSCode	
-(Note: we have to specify the CSCode folder because we also use VBCode, which requires an entry in the web.config)
-Create classes to instantiate your application 
-e.g. MyAppApplication.cs, MyAppApiController.cs, and MyApp.cs (for object class)
+* /MyOrg.Admin/Controllers	
+Create Controller Classes  
+e.g. MyOrgAdminApiController.cs, MyOrgAdminTreeController.cs
 
 * /Config files
-Amend the config files applications.config, dashboard.config (the only one edited manually) and trees.config
+The Tree Controller can amend the config files, or you can do it manually - applications.config, dashboard.config (the only one actually edited manually) and trees.config
 
 * /App_Plugins
 Create an Umbraco backoffice server side UI with subfolders for /MyApp/myAppTree, /propertyeditors, /Lang, and 3 files myApp.resource.js, myAppdashboardintro.html, package.manifest
